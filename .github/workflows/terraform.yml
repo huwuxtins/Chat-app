@@ -64,6 +64,9 @@ jobs:
         shell: bash
 
     steps:
+    - name: Azure Login
+      uses: Azure/login@v2.1.0
+            
     # Checkout the repository to the GitHub Actions runner
     - name: Checkout
       uses: actions/checkout@v4
